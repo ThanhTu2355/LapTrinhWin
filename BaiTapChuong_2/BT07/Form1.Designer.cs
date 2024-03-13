@@ -33,21 +33,21 @@ namespace BT07
             this.label2 = new System.Windows.Forms.Label();
             this.cboLopHoc = new System.Windows.Forms.ComboBox();
             this.lstHocVien = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grbThongTin = new System.Windows.Forms.GroupBox();
             this.btnTiep = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.txtDiaChi = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.txtNgaySinh = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtPhai = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtHoTen = new System.Windows.Forms.Label();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.lbsDC = new System.Windows.Forms.Label();
+            this.txtNgaySinh = new System.Windows.Forms.TextBox();
+            this.labNS = new System.Windows.Forms.Label();
+            this.txtPhai = new System.Windows.Forms.TextBox();
+            this.lbaPhai = new System.Windows.Forms.Label();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.lbaHoTen = new System.Windows.Forms.Label();
             this.txtMaHV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.grbThongTin.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -92,28 +92,28 @@ namespace BT07
             this.lstHocVien.TabIndex = 1;
             this.lstHocVien.SelectedIndexChanged += new System.EventHandler(this.lstHocVien_SelectedIndexChanged);
             // 
-            // groupBox1
+            // grbThongTin
             // 
-            this.groupBox1.Controls.Add(this.btnTiep);
-            this.groupBox1.Controls.Add(this.btnXoa);
-            this.groupBox1.Controls.Add(this.btnCapNhat);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.txtDiaChi);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.txtNgaySinh);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.txtPhai);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.txtHoTen);
-            this.groupBox1.Controls.Add(this.txtMaHV);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox1.Location = new System.Drawing.Point(383, 73);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(315, 307);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin học viên";
+            this.grbThongTin.Controls.Add(this.btnTiep);
+            this.grbThongTin.Controls.Add(this.btnXoa);
+            this.grbThongTin.Controls.Add(this.btnCapNhat);
+            this.grbThongTin.Controls.Add(this.txtDiaChi);
+            this.grbThongTin.Controls.Add(this.lbsDC);
+            this.grbThongTin.Controls.Add(this.txtNgaySinh);
+            this.grbThongTin.Controls.Add(this.labNS);
+            this.grbThongTin.Controls.Add(this.txtPhai);
+            this.grbThongTin.Controls.Add(this.lbaPhai);
+            this.grbThongTin.Controls.Add(this.txtHoTen);
+            this.grbThongTin.Controls.Add(this.lbaHoTen);
+            this.grbThongTin.Controls.Add(this.txtMaHV);
+            this.grbThongTin.Controls.Add(this.label3);
+            this.grbThongTin.ForeColor = System.Drawing.Color.Blue;
+            this.grbThongTin.Location = new System.Drawing.Point(383, 73);
+            this.grbThongTin.Name = "grbThongTin";
+            this.grbThongTin.Size = new System.Drawing.Size(315, 307);
+            this.grbThongTin.TabIndex = 4;
+            this.grbThongTin.TabStop = false;
+            this.grbThongTin.Text = "Thông tin học viên";
             // 
             // btnTiep
             // 
@@ -123,6 +123,7 @@ namespace BT07
             this.btnTiep.TabIndex = 7;
             this.btnTiep.Text = "Tiếp";
             this.btnTiep.UseVisualStyleBackColor = true;
+            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
             // 
             // btnXoa
             // 
@@ -142,77 +143,78 @@ namespace BT07
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(93, 205);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(204, 26);
-            this.textBox5.TabIndex = 4;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
             // txtDiaChi
             // 
-            this.txtDiaChi.AutoSize = true;
-            this.txtDiaChi.Location = new System.Drawing.Point(6, 208);
+            this.txtDiaChi.Location = new System.Drawing.Point(93, 205);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(57, 20);
-            this.txtDiaChi.TabIndex = 8;
-            this.txtDiaChi.Text = "Địa chỉ";
-            this.txtDiaChi.Click += new System.EventHandler(this.label7_Click);
+            this.txtDiaChi.Size = new System.Drawing.Size(204, 26);
+            this.txtDiaChi.TabIndex = 4;
+            this.txtDiaChi.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox4
+            // lbsDC
             // 
-            this.textBox4.Location = new System.Drawing.Point(93, 164);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(204, 26);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.lbsDC.AutoSize = true;
+            this.lbsDC.Location = new System.Drawing.Point(6, 208);
+            this.lbsDC.Name = "lbsDC";
+            this.lbsDC.Size = new System.Drawing.Size(57, 20);
+            this.lbsDC.TabIndex = 8;
+            this.lbsDC.Text = "Địa chỉ";
+            this.lbsDC.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtNgaySinh
             // 
-            this.txtNgaySinh.AutoSize = true;
-            this.txtNgaySinh.Location = new System.Drawing.Point(6, 167);
+            this.txtNgaySinh.Location = new System.Drawing.Point(93, 164);
             this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(78, 20);
-            this.txtNgaySinh.TabIndex = 6;
-            this.txtNgaySinh.Text = "Ngày sinh";
+            this.txtNgaySinh.Size = new System.Drawing.Size(204, 26);
+            this.txtNgaySinh.TabIndex = 3;
+            this.txtNgaySinh.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox3
+            // labNS
             // 
-            this.textBox3.Location = new System.Drawing.Point(93, 123);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(204, 26);
-            this.textBox3.TabIndex = 2;
+            this.labNS.AutoSize = true;
+            this.labNS.Location = new System.Drawing.Point(6, 167);
+            this.labNS.Name = "labNS";
+            this.labNS.Size = new System.Drawing.Size(78, 20);
+            this.labNS.TabIndex = 6;
+            this.labNS.Text = "Ngày sinh";
             // 
             // txtPhai
             // 
-            this.txtPhai.AutoSize = true;
-            this.txtPhai.Location = new System.Drawing.Point(6, 126);
+            this.txtPhai.Location = new System.Drawing.Point(93, 123);
             this.txtPhai.Name = "txtPhai";
-            this.txtPhai.Size = new System.Drawing.Size(40, 20);
-            this.txtPhai.TabIndex = 4;
-            this.txtPhai.Text = "Phái";
+            this.txtPhai.Size = new System.Drawing.Size(204, 26);
+            this.txtPhai.TabIndex = 2;
             // 
-            // textBox2
+            // lbaPhai
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 26);
-            this.textBox2.TabIndex = 1;
+            this.lbaPhai.AutoSize = true;
+            this.lbaPhai.Location = new System.Drawing.Point(6, 126);
+            this.lbaPhai.Name = "lbaPhai";
+            this.lbaPhai.Size = new System.Drawing.Size(40, 20);
+            this.lbaPhai.TabIndex = 4;
+            this.lbaPhai.Text = "Phái";
             // 
             // txtHoTen
             // 
-            this.txtHoTen.AutoSize = true;
-            this.txtHoTen.Location = new System.Drawing.Point(6, 85);
+            this.txtHoTen.Location = new System.Drawing.Point(93, 82);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(61, 20);
-            this.txtHoTen.TabIndex = 2;
-            this.txtHoTen.Text = "Họ Tên";
+            this.txtHoTen.Size = new System.Drawing.Size(204, 26);
+            this.txtHoTen.TabIndex = 1;
+            // 
+            // lbaHoTen
+            // 
+            this.lbaHoTen.AutoSize = true;
+            this.lbaHoTen.Location = new System.Drawing.Point(6, 85);
+            this.lbaHoTen.Name = "lbaHoTen";
+            this.lbaHoTen.Size = new System.Drawing.Size(61, 20);
+            this.lbaHoTen.TabIndex = 2;
+            this.lbaHoTen.Text = "Họ Tên";
             // 
             // txtMaHV
             // 
             this.txtMaHV.Location = new System.Drawing.Point(93, 46);
             this.txtMaHV.Name = "txtMaHV";
+            this.txtMaHV.ReadOnly = true;
             this.txtMaHV.Size = new System.Drawing.Size(204, 26);
             this.txtMaHV.TabIndex = 0;
             // 
@@ -230,7 +232,7 @@ namespace BT07
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 398);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbThongTin);
             this.Controls.Add(this.lstHocVien);
             this.Controls.Add(this.cboLopHoc);
             this.Controls.Add(this.label2);
@@ -242,8 +244,8 @@ namespace BT07
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tra cứu sinh viên theo lớp";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grbThongTin.ResumeLayout(false);
+            this.grbThongTin.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,15 +257,15 @@ namespace BT07
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboLopHoc;
         private System.Windows.Forms.ListBox lstHocVien;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label txtDiaChi;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label txtNgaySinh;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label txtPhai;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label txtHoTen;
+        private System.Windows.Forms.GroupBox grbThongTin;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.Label lbsDC;
+        private System.Windows.Forms.TextBox txtNgaySinh;
+        private System.Windows.Forms.Label labNS;
+        private System.Windows.Forms.TextBox txtPhai;
+        private System.Windows.Forms.Label lbaPhai;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.Label lbaHoTen;
         private System.Windows.Forms.TextBox txtMaHV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnTiep;

@@ -77,7 +77,13 @@ namespace BT07
 
         private void lstHocVien_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (cboLopHoc.SelectedIndex == -1) return;
+            HocVien hv = lstHocVien.SelectedItem as HocVien;
+            txtMaHV.Text = hv.MaHV;
+            txtHoTen.Text = hv.HoTen;
+            txtPhai.Text = hv.Phai == true ? "Nam" : "Nữ";
+            txtNgaySinh.Text = hv.NgaySinh.ToShortDateString();
+            txtDiaChi.Text = hv.DiaChi;
         }
 
         private void cboLopHoc_SelectedIndexChanged(object sender, EventArgs e)
@@ -91,6 +97,22 @@ namespace BT07
             lstHocVien.DisplayMember = "HoTen";
             lstHocVien.ValueMember = "MaHV";
             lstHocVien.DataSource = dsHocVienTheoLop;
+        }
+
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            //txtMaHV.Clear();
+            //txtHoTen.Clear();
+            //txtPhai.Clear();
+            //txtNgaySinh.Clear();
+            //txtDiaChi.Clear();
+            foreach(Control ctl in grbThongTin.Controls)
+            {
+                if (ctl is TextBox)
+                    (ctl as TextBox).Clear();
+            }    
+            txtMaHV.ReadOnly = false;
+            txtMaHV.Focus();
         }
     }
 }

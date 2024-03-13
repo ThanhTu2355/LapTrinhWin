@@ -114,5 +114,32 @@ namespace BT07
             txtMaHV.ReadOnly = false;
             txtMaHV.Focus();
         }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            HocVien hv;
+            if(!txtMaHV.ReadOnly)
+            {
+                hv = new HocVien();
+                hv.MaHV = txtMaHV.Text;
+                hv.HoTen = txtHoTen.Text;
+                hv.Phai = txtPhai.Text.ToLower() == "nam" ? true : false;
+                hv.NgaySinh = DateTime.Parse(txtNgaySinh.Text);
+                hv.DiaChi = txtDiaChi.Text;
+                hv.MaLH = cboLopHoc.SelectedValue.ToString();
+                hocViens.Add(hv);
+            }
+            else
+            {
+                hv = lstHocVien.SelectedItem as HocVien;
+                hv.HoTen = txtHoTen.Text;
+                hv.Phai = txtPhai.Text.ToLower() == "nam" ? true : false;
+                hv.NgaySinh = DateTime.Parse(txtNgaySinh.Text);
+                hv.DiaChi = txtDiaChi.Text;
+            }
+            cboLopHoc_SelectedIndexChanged(sender, e);
+            lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
+            txtMaHV.ReadOnly = true;
+        }
     }
 }

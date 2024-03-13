@@ -121,13 +121,24 @@ namespace BT07
             if(!txtMaHV.ReadOnly)
             {
                 hv = new HocVien();
+                if(txtMaHV.Text=="")
+                {
+                    ThongBaoRong(txtMaHV, "Mã học viên");
+                    return;
+                }    
                 hv.MaHV = txtMaHV.Text;
+                if (txtHoTen.Text == "")
+                {
+                    ThongBaoRong(txtHoTen, "Họ tên học viên");
+                    return;
+                }
                 hv.HoTen = txtHoTen.Text;
                 hv.Phai = txtPhai.Text.ToLower() == "nam" ? true : false;
                 hv.NgaySinh = DateTime.Parse(txtNgaySinh.Text);
                 hv.DiaChi = txtDiaChi.Text;
                 hv.MaLH = cboLopHoc.SelectedValue.ToString();
                 hocViens.Add(hv);
+                txtMaHV.ReadOnly = true;
             }
             else
             {
@@ -139,7 +150,23 @@ namespace BT07
             }
             cboLopHoc_SelectedIndexChanged(sender, e);
             lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
-            txtMaHV.ReadOnly = true;
+        }
+
+        private void ThongBaoRong(TextBox Ctl, string CauThongBao)
+        {
+            MessageBox.Show(CauThongBao + " không được bỏ trống", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Ctl.Focus();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult tl = MessageBox.Show("Bạn có muốn xoá học viên không", "Xoá học viên", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(tl==DialogResult.Yes)
+            {
+                hocViens.Remove(lstHocVien.SelectedItem as HocVien);
+                cboLopHoc_SelectedIndexChanged(sender, e);
+                lstHocVien.SelectedIndex = 0;
+            }    
         }
     }
 }

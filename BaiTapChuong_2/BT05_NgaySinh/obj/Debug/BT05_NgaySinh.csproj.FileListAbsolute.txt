@@ -1,0 +1,10 @@
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\bin\Debug\BT05_NgaySinh.exe.config
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\bin\Debug\BT05_NgaySinh.exe
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\bin\Debug\BT05_NgaySinh.pdb
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\obj\Debug\BT05_NgaySinh.csproj.AssemblyReference.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\obj\Debug\BT05_NgaySinh.Form1.resources
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\obj\Debug\BT05_NgaySinh.Properties.Resources.resources
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\obj\Debug\BT05_NgaySinh.csproj.GenerateResource.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\obj\Debug\BT05_NgaySinh.csproj.CoreCompileInputs.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\obj\Debug\BT05_NgaySinh.exe
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT05_NgaySinh\obj\Debug\BT05_NgaySinh.pdb

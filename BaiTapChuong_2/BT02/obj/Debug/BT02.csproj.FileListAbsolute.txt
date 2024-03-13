@@ -1,0 +1,10 @@
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\bin\Debug\BT02.exe.config
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\bin\Debug\BT02.exe
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\bin\Debug\BT02.pdb
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\obj\Debug\BT02.csproj.AssemblyReference.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\obj\Debug\BT02.Form1.resources
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\obj\Debug\BT02.Properties.Resources.resources
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\obj\Debug\BT02.csproj.GenerateResource.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\obj\Debug\BT02.csproj.CoreCompileInputs.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\obj\Debug\BT02.exe
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT02\obj\Debug\BT02.pdb

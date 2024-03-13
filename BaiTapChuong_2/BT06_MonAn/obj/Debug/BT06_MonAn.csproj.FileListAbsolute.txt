@@ -1,0 +1,10 @@
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\bin\Debug\BT06_MonAn.exe.config
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\bin\Debug\BT06_MonAn.exe
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\bin\Debug\BT06_MonAn.pdb
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\obj\Debug\BT06_MonAn.csproj.AssemblyReference.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\obj\Debug\BT06_MonAn.Form1.resources
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\obj\Debug\BT06_MonAn.Properties.Resources.resources
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\obj\Debug\BT06_MonAn.csproj.GenerateResource.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\obj\Debug\BT06_MonAn.csproj.CoreCompileInputs.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\obj\Debug\BT06_MonAn.exe
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT06_MonAn\obj\Debug\BT06_MonAn.pdb

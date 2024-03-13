@@ -19,25 +19,7 @@ namespace BT07
             InitializeComponent();
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             KhoiTaoDuLieu();
@@ -168,5 +150,7 @@ namespace BT07
                 lstHocVien.SelectedIndex = 0;
             }    
         }
+
+        
     }
 }

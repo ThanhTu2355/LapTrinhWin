@@ -70,6 +70,7 @@ namespace BT07
             this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Chọn lớp";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // cboLopHoc
             // 
@@ -114,6 +115,7 @@ namespace BT07
             this.grbThongTin.TabIndex = 4;
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin học viên";
+            this.grbThongTin.Enter += new System.EventHandler(this.grbThongTin_Enter);
             // 
             // btnTiep
             // 
@@ -179,6 +181,7 @@ namespace BT07
             this.labNS.Size = new System.Drawing.Size(78, 20);
             this.labNS.TabIndex = 6;
             this.labNS.Text = "Ngày sinh";
+            this.labNS.Click += new System.EventHandler(this.labNS_Click);
             // 
             // txtPhai
             // 
@@ -186,6 +189,7 @@ namespace BT07
             this.txtPhai.Name = "txtPhai";
             this.txtPhai.Size = new System.Drawing.Size(204, 26);
             this.txtPhai.TabIndex = 2;
+            this.txtPhai.TextChanged += new System.EventHandler(this.txtPhai_TextChanged);
             // 
             // lbaPhai
             // 
@@ -195,6 +199,7 @@ namespace BT07
             this.lbaPhai.Size = new System.Drawing.Size(40, 20);
             this.lbaPhai.TabIndex = 4;
             this.lbaPhai.Text = "Phái";
+            this.lbaPhai.Click += new System.EventHandler(this.lbaPhai_Click);
             // 
             // txtHoTen
             // 
@@ -202,6 +207,7 @@ namespace BT07
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(204, 26);
             this.txtHoTen.TabIndex = 1;
+            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // lbaHoTen
             // 
@@ -211,6 +217,7 @@ namespace BT07
             this.lbaHoTen.Size = new System.Drawing.Size(61, 20);
             this.lbaHoTen.TabIndex = 2;
             this.lbaHoTen.Text = "Họ Tên";
+            this.lbaHoTen.Click += new System.EventHandler(this.lbaHoTen_Click);
             // 
             // txtMaHV
             // 
@@ -219,6 +226,7 @@ namespace BT07
             this.txtMaHV.ReadOnly = true;
             this.txtMaHV.Size = new System.Drawing.Size(204, 26);
             this.txtMaHV.TabIndex = 0;
+            this.txtMaHV.TextChanged += new System.EventHandler(this.txtMaHV_TextChanged);
             // 
             // label3
             // 
@@ -228,6 +236,7 @@ namespace BT07
             this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã HV";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 

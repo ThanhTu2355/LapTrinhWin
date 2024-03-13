@@ -1,0 +1,10 @@
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\bin\Debug\BT08_HocVien.exe.config
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\bin\Debug\BT08_HocVien.exe
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\bin\Debug\BT08_HocVien.pdb
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.csproj.AssemblyReference.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.Form1.resources
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.Properties.Resources.resources
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.csproj.GenerateResource.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.csproj.CoreCompileInputs.cache
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.exe
+D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.pdb

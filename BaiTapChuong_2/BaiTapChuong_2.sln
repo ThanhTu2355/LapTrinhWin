@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT07", "BT07\BT07.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT08_HocVien", "BT08_HocVien\BT08_HocVien.csproj", "{13D4AD86-18D7-442F-9E7F-5A0A96D886DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT09", "Bt09\BT09.csproj", "{7F024EA3-7397-4D4E-84EC-4045D0D42646}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{13D4AD86-18D7-442F-9E7F-5A0A96D886DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13D4AD86-18D7-442F-9E7F-5A0A96D886DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13D4AD86-18D7-442F-9E7F-5A0A96D886DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F024EA3-7397-4D4E-84EC-4045D0D42646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F024EA3-7397-4D4E-84EC-4045D0D42646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F024EA3-7397-4D4E-84EC-4045D0D42646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F024EA3-7397-4D4E-84EC-4045D0D42646}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

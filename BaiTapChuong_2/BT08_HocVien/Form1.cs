@@ -33,6 +33,7 @@ namespace BT08_HocVien
 
         private void KhoiTaoListBox()
         {
+            lstHocVien.DataSource = null;
             lstHocVien.DisplayMember = "HoTen";
             lstHocVien.ValueMember = "MaHV";
             lstHocVien.DataSource = HocViens;
@@ -74,9 +75,67 @@ namespace BT08_HocVien
         {
             if (lstHocVien.SelectedIndex == -1) return;
             HocVien hv = lstHocVien.SelectedItem as HocVien;
+            GanDuLieu(hv);
+        }
+
+        private void GanDuLieu(HocVien hv)
+        {
             txtMaHV.Text = hv.MaHV.ToString();
             txtHoTen.Text = hv.HoTen;
             cboLopHoc.SelectedValue = hv.MaLH;
+        }
+
+        private void cboLopHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboLopHoc.SelectedIndex == -1) return;
+            LopHoc lh = cboLopHoc.SelectedItem as LopHoc;
+            lblThanhTien.Text = lh.HocPhi.ToString("#,##0 VND");
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            HocVien hv;
+            if(!txtMaHV.ReadOnly)
+            {
+                hv = new HocVien();
+                hv.MaHV = int.Parse(txtMaHV.Text);
+                hv.HoTen = txtHoTen.Text;
+                hv.MaLH = cboLopHoc.SelectedValue.ToString();
+                HocViens.Add(hv);
+                txtMaHV.ReadOnly = true;
+                KhoiTaoListBox();
+                lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
+            }  
+            else
+            {
+                hv = lstHocVien.SelectedItem as HocVien;
+                hv.HoTen = txtHoTen.Text;
+                hv.MaLH = cboLopHoc.SelectedValue.ToString();
+                KhoiTaoListBox();
+                lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
+            }    
+        }
+
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            foreach (Control ctl in grbThongTin.Controls)
+            {
+                if (ctl is TextBox)
+                    (ctl as TextBox).Clear();
+            }
+            txtMaHV.Focus();
+            txtMaHV.ReadOnly = false;
+        }
+
+        private void btnThoát_Click(object sender, EventArgs e)
+        {
+            DialogResult tl = MessageBox.Show("Bạn có muốn xoá học viên không", "Thông báo xoá", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(tl==DialogResult.Yes)
+            {
+                HocViens.Remove(lstHocVien.SelectedItem as HocVien);
+                lstHocVien.SelectedIndex = 0;
+                KhoiTaoListBox();
+            }
         }
     }
 }

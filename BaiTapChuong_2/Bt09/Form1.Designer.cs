@@ -1,5 +1,5 @@
 ﻿
-namespace BT08_HocVien
+namespace Bt09
 {
     partial class Form1
     {
@@ -31,7 +31,7 @@ namespace BT08_HocVien
         {
             this.btnTiep = new System.Windows.Forms.Button();
             this.btnThoát = new System.Windows.Forms.Button();
-            this.btnCapNhat = new System.Windows.Forms.Button();
+            this.btnDangKy = new System.Windows.Forms.Button();
             this.lblThanhTien = new System.Windows.Forms.Label();
             this.labNS = new System.Windows.Forms.Label();
             this.lbaPhai = new System.Windows.Forms.Label();
@@ -43,43 +43,41 @@ namespace BT08_HocVien
             this.cboLopHoc = new System.Windows.Forms.ComboBox();
             this.lstHocVien = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.grbThongTin.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnTiep
             // 
-            this.btnTiep.Location = new System.Drawing.Point(129, 211);
+            this.btnTiep.Location = new System.Drawing.Point(129, 232);
             this.btnTiep.Name = "btnTiep";
             this.btnTiep.Size = new System.Drawing.Size(72, 28);
             this.btnTiep.TabIndex = 7;
             this.btnTiep.Text = "Tiếp";
             this.btnTiep.UseVisualStyleBackColor = true;
-            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
             // 
             // btnThoát
             // 
-            this.btnThoát.Location = new System.Drawing.Point(224, 211);
+            this.btnThoát.Location = new System.Drawing.Point(224, 232);
             this.btnThoát.Name = "btnThoát";
             this.btnThoát.Size = new System.Drawing.Size(72, 28);
             this.btnThoát.TabIndex = 6;
             this.btnThoát.Text = "Xoá";
             this.btnThoát.UseVisualStyleBackColor = true;
-            this.btnThoát.Click += new System.EventHandler(this.btnThoát_Click);
             // 
-            // btnCapNhat
+            // btnDangKy
             // 
-            this.btnCapNhat.Location = new System.Drawing.Point(13, 211);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(93, 28);
-            this.btnCapNhat.TabIndex = 5;
-            this.btnCapNhat.Text = "Cập nhật";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
-            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
+            this.btnDangKy.Location = new System.Drawing.Point(13, 232);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(93, 28);
+            this.btnDangKy.TabIndex = 5;
+            this.btnDangKy.Text = "Đăng ký";
+            this.btnDangKy.UseVisualStyleBackColor = true;
             // 
             // lblThanhTien
             // 
             this.lblThanhTien.AutoSize = true;
-            this.lblThanhTien.Location = new System.Drawing.Point(89, 167);
+            this.lblThanhTien.Location = new System.Drawing.Point(89, 188);
             this.lblThanhTien.Name = "lblThanhTien";
             this.lblThanhTien.Size = new System.Drawing.Size(73, 19);
             this.lblThanhTien.TabIndex = 8;
@@ -88,7 +86,7 @@ namespace BT08_HocVien
             // labNS
             // 
             this.labNS.AutoSize = true;
-            this.labNS.Location = new System.Drawing.Point(6, 167);
+            this.labNS.Location = new System.Drawing.Point(6, 188);
             this.labNS.Name = "labNS";
             this.labNS.Size = new System.Drawing.Size(71, 19);
             this.labNS.TabIndex = 6;
@@ -97,7 +95,7 @@ namespace BT08_HocVien
             // lbaPhai
             // 
             this.lbaPhai.AutoSize = true;
-            this.lbaPhai.Location = new System.Drawing.Point(6, 130);
+            this.lbaPhai.Location = new System.Drawing.Point(6, 151);
             this.lbaPhai.Name = "lbaPhai";
             this.lbaPhai.Size = new System.Drawing.Size(86, 19);
             this.lbaPhai.TabIndex = 4;
@@ -138,10 +136,11 @@ namespace BT08_HocVien
             // 
             // grbThongTin
             // 
+            this.grbThongTin.Controls.Add(this.checkBox1);
             this.grbThongTin.Controls.Add(this.btnTiep);
             this.grbThongTin.Controls.Add(this.btnThoát);
             this.grbThongTin.Controls.Add(this.cboLopHoc);
-            this.grbThongTin.Controls.Add(this.btnCapNhat);
+            this.grbThongTin.Controls.Add(this.btnDangKy);
             this.grbThongTin.Controls.Add(this.lblThanhTien);
             this.grbThongTin.Controls.Add(this.labNS);
             this.grbThongTin.Controls.Add(this.lbaPhai);
@@ -150,10 +149,10 @@ namespace BT08_HocVien
             this.grbThongTin.Controls.Add(this.txtMaHV);
             this.grbThongTin.Controls.Add(this.label3);
             this.grbThongTin.ForeColor = System.Drawing.Color.Blue;
-            this.grbThongTin.Location = new System.Drawing.Point(297, 90);
+            this.grbThongTin.Location = new System.Drawing.Point(302, 68);
             this.grbThongTin.Name = "grbThongTin";
             this.grbThongTin.Size = new System.Drawing.Size(315, 274);
-            this.grbThongTin.TabIndex = 9;
+            this.grbThongTin.TabIndex = 12;
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin học viên";
             // 
@@ -161,7 +160,7 @@ namespace BT08_HocVien
             // 
             this.cboLopHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLopHoc.FormattingEnabled = true;
-            this.cboLopHoc.Location = new System.Drawing.Point(93, 126);
+            this.cboLopHoc.Location = new System.Drawing.Point(93, 147);
             this.cboLopHoc.Name = "cboLopHoc";
             this.cboLopHoc.Size = new System.Drawing.Size(204, 27);
             this.cboLopHoc.TabIndex = 5;
@@ -172,10 +171,10 @@ namespace BT08_HocVien
             this.lstHocVien.ForeColor = System.Drawing.Color.Blue;
             this.lstHocVien.FormattingEnabled = true;
             this.lstHocVien.ItemHeight = 19;
-            this.lstHocVien.Location = new System.Drawing.Point(12, 90);
+            this.lstHocVien.Location = new System.Drawing.Point(17, 68);
             this.lstHocVien.Name = "lstHocVien";
             this.lstHocVien.Size = new System.Drawing.Size(266, 270);
-            this.lstHocVien.TabIndex = 7;
+            this.lstHocVien.TabIndex = 11;
             this.lstHocVien.SelectedIndexChanged += new System.EventHandler(this.lstHocVien_SelectedIndexChanged);
             // 
             // label1
@@ -184,26 +183,36 @@ namespace BT08_HocVien
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(644, 65);
-            this.label1.TabIndex = 6;
+            this.label1.Size = new System.Drawing.Size(655, 65);
+            this.label1.TabIndex = 10;
             this.label1.Text = "DANH SÁCH HỌC VIÊN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox1.Location = new System.Drawing.Point(5, 114);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(99, 23);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Là sinh viên";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 383);
+            this.ClientSize = new System.Drawing.Size(655, 375);
             this.Controls.Add(this.grbThongTin);
             this.Controls.Add(this.lstHocVien);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Blue;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Danh sách học viên";
+            this.Text = "Quản lí sinh viên";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grbThongTin.ResumeLayout(false);
             this.grbThongTin.PerformLayout();
@@ -215,7 +224,7 @@ namespace BT08_HocVien
 
         private System.Windows.Forms.Button btnTiep;
         private System.Windows.Forms.Button btnThoát;
-        private System.Windows.Forms.Button btnCapNhat;
+        private System.Windows.Forms.Button btnDangKy;
         private System.Windows.Forms.Label lblThanhTien;
         private System.Windows.Forms.Label labNS;
         private System.Windows.Forms.Label lbaPhai;
@@ -224,6 +233,7 @@ namespace BT08_HocVien
         private System.Windows.Forms.TextBox txtMaHV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox grbThongTin;
+        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.ComboBox cboLopHoc;
         private System.Windows.Forms.ListBox lstHocVien;
         private System.Windows.Forms.Label label1;

@@ -8,3 +8,13 @@ D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.csproj.Ge
 D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.csproj.CoreCompileInputs.cache
 D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.exe
 D:\DATA\LapTrinhWin\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.pdb
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\bin\Debug\BT08_HocVien.exe.config
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\bin\Debug\BT08_HocVien.exe
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\bin\Debug\BT08_HocVien.pdb
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.csproj.AssemblyReference.cache
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.Form1.resources
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.Properties.Resources.resources
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.csproj.GenerateResource.cache
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.csproj.CoreCompileInputs.cache
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.exe
+D:\DATA\Git Clone\Git clone\BaiTapChuong_2\BT08_HocVien\obj\Debug\BT08_HocVien.pdb

@@ -40,8 +40,8 @@ namespace BT08_HocVien
             this.txtMaHV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.grbThongTin = new System.Windows.Forms.GroupBox();
-            this.lstHocVien = new System.Windows.Forms.ListBox();
             this.cboLopHoc = new System.Windows.Forms.ComboBox();
+            this.lstHocVien = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grbThongTin.SuspendLayout();
             this.SuspendLayout();
@@ -154,6 +154,15 @@ namespace BT08_HocVien
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin học viên";
             // 
+            // cboLopHoc
+            // 
+            this.cboLopHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLopHoc.FormattingEnabled = true;
+            this.cboLopHoc.Location = new System.Drawing.Point(93, 126);
+            this.cboLopHoc.Name = "cboLopHoc";
+            this.cboLopHoc.Size = new System.Drawing.Size(204, 27);
+            this.cboLopHoc.TabIndex = 5;
+            // 
             // lstHocVien
             // 
             this.lstHocVien.ForeColor = System.Drawing.Color.Blue;
@@ -163,15 +172,7 @@ namespace BT08_HocVien
             this.lstHocVien.Name = "lstHocVien";
             this.lstHocVien.Size = new System.Drawing.Size(266, 270);
             this.lstHocVien.TabIndex = 7;
-            // 
-            // cboLopHoc
-            // 
-            this.cboLopHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboLopHoc.FormattingEnabled = true;
-            this.cboLopHoc.Location = new System.Drawing.Point(93, 126);
-            this.cboLopHoc.Name = "cboLopHoc";
-            this.cboLopHoc.Size = new System.Drawing.Size(204, 27);
-            this.cboLopHoc.TabIndex = 5;
+            this.lstHocVien.SelectedIndexChanged += new System.EventHandler(this.lstHocVien_SelectedIndexChanged);
             // 
             // label1
             // 

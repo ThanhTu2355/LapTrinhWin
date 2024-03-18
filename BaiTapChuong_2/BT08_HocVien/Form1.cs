@@ -69,5 +69,14 @@ namespace BT08_HocVien
                 new HocVien {MaHV=10,HoTen="Nguyễn Văn Phải",MaLH="L04"},
             };
         }
+
+        private void lstHocVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lstHocVien.SelectedIndex == -1) return;
+            HocVien hv = lstHocVien.SelectedItem as HocVien;
+            txtMaHV.Text = hv.MaHV.ToString();
+            txtHoTen.Text = hv.HoTen;
+            cboLopHoc.SelectedValue = hv.MaLH;
+        }
     }
 }

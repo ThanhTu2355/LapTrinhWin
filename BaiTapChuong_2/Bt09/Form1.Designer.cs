@@ -43,7 +43,7 @@ namespace Bt09
             this.cboLopHoc = new System.Windows.Forms.ComboBox();
             this.lstHocVien = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkLaSinhVien = new System.Windows.Forms.CheckBox();
             this.grbThongTin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,7 @@ namespace Bt09
             this.btnTiep.TabIndex = 7;
             this.btnTiep.Text = "Tiếp";
             this.btnTiep.UseVisualStyleBackColor = true;
+            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
             // 
             // btnThoát
             // 
@@ -82,6 +83,7 @@ namespace Bt09
             this.lblThanhTien.Size = new System.Drawing.Size(73, 19);
             this.lblThanhTien.TabIndex = 8;
             this.lblThanhTien.Text = "1,000,000";
+            this.lblThanhTien.Click += new System.EventHandler(this.lblThanhTien_Click);
             // 
             // labNS
             // 
@@ -136,7 +138,7 @@ namespace Bt09
             // 
             // grbThongTin
             // 
-            this.grbThongTin.Controls.Add(this.checkBox1);
+            this.grbThongTin.Controls.Add(this.chkLaSinhVien);
             this.grbThongTin.Controls.Add(this.btnTiep);
             this.grbThongTin.Controls.Add(this.btnThoát);
             this.grbThongTin.Controls.Add(this.cboLopHoc);
@@ -188,16 +190,17 @@ namespace Bt09
             this.label1.Text = "DANH SÁCH HỌC VIÊN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBox1
+            // chkLaSinhVien
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(5, 114);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 23);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Là sinh viên";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkLaSinhVien.AutoSize = true;
+            this.chkLaSinhVien.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkLaSinhVien.Location = new System.Drawing.Point(5, 114);
+            this.chkLaSinhVien.Name = "chkLaSinhVien";
+            this.chkLaSinhVien.Size = new System.Drawing.Size(99, 23);
+            this.chkLaSinhVien.TabIndex = 9;
+            this.chkLaSinhVien.Text = "Là sinh viên";
+            this.chkLaSinhVien.UseVisualStyleBackColor = true;
+            this.chkLaSinhVien.CheckedChanged += new System.EventHandler(this.chkLaSinhVien_CheckedChanged);
             // 
             // Form1
             // 
@@ -233,7 +236,7 @@ namespace Bt09
         private System.Windows.Forms.TextBox txtMaHV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox grbThongTin;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkLaSinhVien;
         private System.Windows.Forms.ComboBox cboLopHoc;
         private System.Windows.Forms.ListBox lstHocVien;
         private System.Windows.Forms.Label label1;

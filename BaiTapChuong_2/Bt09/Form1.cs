@@ -70,16 +70,48 @@ namespace Bt09
         {
             if (lstHocVien.SelectedIndex == -1) return;
             HocVien hv = lstHocVien.SelectedItem as HocVien;
+            GanDuLieu(hv);
+        }
+
+        private void GanDuLieu(HocVien hv)
+        {
             txtMaHV.Text = hv.MaHV.ToString();
             txtHoTen.Text = hv.HoTen;
+            chkLaSinhVien.Checked = hv.LaSV;
             cboLopHoc.SelectedValue = hv.MaLH;
+            lblThanhTien.Text = hv.ThanhTien.ToString("#,##0 VND");
         }
 
         private void cboLopHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboLopHoc.SelectedIndex == -1) return;
             LopHoc lh = cboLopHoc.SelectedItem as LopHoc;
-            lblThanhTien.Text = lh.HocPhi.ToString("#,##0 VND");
+            double thanhtien = lh.HocPhi * (chkLaSinhVien.Checked == true ? 0.9 : 1);
+            lblThanhTien.Text = thanhtien.ToString("#,##0 VND");
+        }
+
+        private void lblThanhTien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkLaSinhVien_CheckedChanged(object sender, EventArgs e)
+        {
+            cboLopHoc_SelectedIndexChanged(sender, e);
+        }
+
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            txtMaHV.ReadOnly = false;
+
+            foreach (Control ctl in grbThongTin.Controls)
+            {
+                if (ctl is TextBox)
+                    (ctl as TextBox).Clear();
+            }
+            txtMaHV.Focus();
+            chkLaSinhVien.Checked = true;
+            cboLopHoc_SelectedIndexChanged(sender, e);
         }
     }
 }

@@ -1,0 +1,10 @@
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\bin\Debug\CheckBox_RadioButton.exe.config
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\bin\Debug\CheckBox_RadioButton.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\bin\Debug\CheckBox_RadioButton.pdb
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\obj\Debug\CheckBox_RadioButton.csproj.AssemblyReference.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\obj\Debug\CheckBox_RadioButton.Form1.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\obj\Debug\CheckBox_RadioButton.Properties.Resources.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\obj\Debug\CheckBox_RadioButton.csproj.GenerateResource.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\obj\Debug\CheckBox_RadioButton.csproj.CoreCompileInputs.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\obj\Debug\CheckBox_RadioButton.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\CheckBox_RadioButton\obj\Debug\CheckBox_RadioButton.pdb

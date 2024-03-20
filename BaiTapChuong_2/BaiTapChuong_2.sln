@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT08_HocVien", "BT08_HocVie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT09", "Bt09\BT09.csproj", "{7F024EA3-7397-4D4E-84EC-4045D0D42646}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBox_RadioButton", "CheckBox_RadioButton\CheckBox_RadioButton.csproj", "{570A7C43-1333-4632-BDF8-025258405434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT12", "BT12\BT12.csproj", "{71F2F917-6F2A-4B16-8D9C-15C74380EEFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{7F024EA3-7397-4D4E-84EC-4045D0D42646}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F024EA3-7397-4D4E-84EC-4045D0D42646}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F024EA3-7397-4D4E-84EC-4045D0D42646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{570A7C43-1333-4632-BDF8-025258405434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570A7C43-1333-4632-BDF8-025258405434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570A7C43-1333-4632-BDF8-025258405434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570A7C43-1333-4632-BDF8-025258405434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F2F917-6F2A-4B16-8D9C-15C74380EEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F2F917-6F2A-4B16-8D9C-15C74380EEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F2F917-6F2A-4B16-8D9C-15C74380EEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F2F917-6F2A-4B16-8D9C-15C74380EEFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

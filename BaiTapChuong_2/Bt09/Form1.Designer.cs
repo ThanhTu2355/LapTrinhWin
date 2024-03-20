@@ -40,10 +40,10 @@ namespace Bt09
             this.txtMaHV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.grbThongTin = new System.Windows.Forms.GroupBox();
+            this.chkLaSinhVien = new System.Windows.Forms.CheckBox();
             this.cboLopHoc = new System.Windows.Forms.ComboBox();
             this.lstHocVien = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.chkLaSinhVien = new System.Windows.Forms.CheckBox();
             this.grbThongTin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +74,7 @@ namespace Bt09
             this.btnDangKy.TabIndex = 5;
             this.btnDangKy.Text = "Đăng ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // lblThanhTien
             // 
@@ -158,6 +159,18 @@ namespace Bt09
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin học viên";
             // 
+            // chkLaSinhVien
+            // 
+            this.chkLaSinhVien.AutoSize = true;
+            this.chkLaSinhVien.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkLaSinhVien.Location = new System.Drawing.Point(5, 114);
+            this.chkLaSinhVien.Name = "chkLaSinhVien";
+            this.chkLaSinhVien.Size = new System.Drawing.Size(99, 23);
+            this.chkLaSinhVien.TabIndex = 9;
+            this.chkLaSinhVien.Text = "Là sinh viên";
+            this.chkLaSinhVien.UseVisualStyleBackColor = true;
+            this.chkLaSinhVien.CheckedChanged += new System.EventHandler(this.chkLaSinhVien_CheckedChanged);
+            // 
             // cboLopHoc
             // 
             this.cboLopHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -190,18 +203,6 @@ namespace Bt09
             this.label1.Text = "DANH SÁCH HỌC VIÊN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // chkLaSinhVien
-            // 
-            this.chkLaSinhVien.AutoSize = true;
-            this.chkLaSinhVien.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkLaSinhVien.Location = new System.Drawing.Point(5, 114);
-            this.chkLaSinhVien.Name = "chkLaSinhVien";
-            this.chkLaSinhVien.Size = new System.Drawing.Size(99, 23);
-            this.chkLaSinhVien.TabIndex = 9;
-            this.chkLaSinhVien.Text = "Là sinh viên";
-            this.chkLaSinhVien.UseVisualStyleBackColor = true;
-            this.chkLaSinhVien.CheckedChanged += new System.EventHandler(this.chkLaSinhVien_CheckedChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -212,7 +213,7 @@ namespace Bt09
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Blue;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lí sinh viên";

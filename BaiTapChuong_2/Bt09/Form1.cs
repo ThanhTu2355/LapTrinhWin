@@ -113,5 +113,33 @@ namespace Bt09
             chkLaSinhVien.Checked = true;
             cboLopHoc_SelectedIndexChanged(sender, e);
         }
+
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+            HocVien hv;
+            if(!txtMaHV.ReadOnly)
+            {
+                hv = new HocVien();
+                hv.MaHV = int.Parse(txtMaHV.Text);
+                hv.HoTen = txtHoTen.Text;
+                hv.LaSV = chkLaSinhVien.Checked;
+                hv.MaLH = cboLopHoc.SelectedValue.ToString();
+                hv.ThanhTien = int.Parse(lblThanhTien.Text.Replace(",", "").Replace("VND", ""));
+                HocViens.Add(hv);
+                KhoiTaoListBox();
+                lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
+                txtMaHV.ReadOnly = true;
+            }    
+            else
+            {
+                hv = lstHocVien.SelectedItem as HocVien;
+                hv.HoTen = txtHoTen.Text;
+                hv.LaSV = chkLaSinhVien.Checked;
+                hv.MaLH = cboLopHoc.SelectedValue.ToString();
+                hv.ThanhTien = int.Parse(lblThanhTien.Text.Replace(",", "").Replace("VND", ""));
+                KhoiTaoListBox();
+                lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
+            }
+        }
     }
 }

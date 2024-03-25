@@ -30,12 +30,12 @@ namespace BT11_TatMoDen
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTen = new System.Windows.Forms.TextBox();
+            this.txtTen = new System.Windows.Forms.TextBox();
             this.btnOnOff = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLightOff = new System.Windows.Forms.PictureBox();
             this.picLightOn = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLightOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLightOn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,14 +48,13 @@ namespace BT11_TatMoDen
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên";
             // 
-            // btnTen
+            // txtTen
             // 
-            this.btnTen.Location = new System.Drawing.Point(80, 54);
-            this.btnTen.Name = "btnTen";
-            this.btnTen.Size = new System.Drawing.Size(156, 26);
-            this.btnTen.TabIndex = 1;
-            this.btnTen.Text = "Tú";
-            this.btnTen.TextChanged += new System.EventHandler(this.btnTen_TextChanged);
+            this.txtTen.Location = new System.Drawing.Point(80, 54);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(156, 26);
+            this.txtTen.TabIndex = 1;
+            this.txtTen.TextChanged += new System.EventHandler(this.btnTen_TextChanged);
             // 
             // btnOnOff
             // 
@@ -65,6 +64,7 @@ namespace BT11_TatMoDen
             this.btnOnOff.TabIndex = 3;
             this.btnOnOff.Text = "Tắt Mở đèn";
             this.btnOnOff.UseVisualStyleBackColor = true;
+            this.btnOnOff.Click += new System.EventHandler(this.btnOnOff_Click);
             // 
             // btnThoat
             // 
@@ -76,16 +76,16 @@ namespace BT11_TatMoDen
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // pictureBox1
+            // picLightOff
             // 
-            this.pictureBox1.Image = global::BT11_TatMoDen.Properties.Resources.LightOFF;
-            this.pictureBox1.Location = new System.Drawing.Point(46, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 244);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.picLightOff.Image = global::BT11_TatMoDen.Properties.Resources.LightOFF;
+            this.picLightOff.Location = new System.Drawing.Point(46, 92);
+            this.picLightOff.Name = "picLightOff";
+            this.picLightOff.Size = new System.Drawing.Size(190, 244);
+            this.picLightOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLightOff.TabIndex = 5;
+            this.picLightOff.TabStop = false;
+            this.picLightOff.Visible = false;
             // 
             // picLightOn
             // 
@@ -102,19 +102,20 @@ namespace BT11_TatMoDen
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(290, 496);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(290, 477);
+            this.Controls.Add(this.picLightOff);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnOnOff);
             this.Controls.Add(this.picLightOn);
-            this.Controls.Add(this.btnTen);
+            this.Controls.Add(this.txtTen);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ứng dụng Tắt Mở đèn";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picLightOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLightOn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -124,11 +125,11 @@ namespace BT11_TatMoDen
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox btnTen;
+        private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.PictureBox picLightOn;
         private System.Windows.Forms.Button btnOnOff;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLightOff;
     }
 }
 

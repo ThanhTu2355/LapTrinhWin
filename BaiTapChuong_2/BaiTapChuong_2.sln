@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT11_TatMoDen", "BT11_TatMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT15", "BT15\BT15.csproj", "{8B14D901-2F5A-4992-85FF-7816DED0BD8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT16", "BT16\BT16.csproj", "{4BF34A75-8692-4A2D-BC32-E0A28A2605F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{8B14D901-2F5A-4992-85FF-7816DED0BD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B14D901-2F5A-4992-85FF-7816DED0BD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B14D901-2F5A-4992-85FF-7816DED0BD8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF34A75-8692-4A2D-BC32-E0A28A2605F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF34A75-8692-4A2D-BC32-E0A28A2605F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF34A75-8692-4A2D-BC32-E0A28A2605F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF34A75-8692-4A2D-BC32-E0A28A2605F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

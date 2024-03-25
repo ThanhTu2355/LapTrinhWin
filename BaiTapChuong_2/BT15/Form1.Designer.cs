@@ -151,6 +151,11 @@ namespace BT15
             this.nmuSoLuong.Name = "nmuSoLuong";
             this.nmuSoLuong.Size = new System.Drawing.Size(120, 27);
             this.nmuSoLuong.TabIndex = 6;
+            this.nmuSoLuong.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // dmuLoaiVe
             // 
@@ -158,7 +163,7 @@ namespace BT15
             this.dmuLoaiVe.Name = "dmuLoaiVe";
             this.dmuLoaiVe.Size = new System.Drawing.Size(120, 27);
             this.dmuLoaiVe.TabIndex = 7;
-            this.dmuLoaiVe.Text = "domainUpDown1";
+            this.dmuLoaiVe.Text = "VIP";
             // 
             // label5
             // 

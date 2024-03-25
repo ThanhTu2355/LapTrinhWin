@@ -1,0 +1,10 @@
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\bin\Debug\BT11_TatMoDen.exe.config
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\bin\Debug\BT11_TatMoDen.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\bin\Debug\BT11_TatMoDen.pdb
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\obj\Debug\BT11_TatMoDen.csproj.AssemblyReference.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\obj\Debug\BT11_TatMoDen.Form1.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\obj\Debug\BT11_TatMoDen.Properties.Resources.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\obj\Debug\BT11_TatMoDen.csproj.GenerateResource.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\obj\Debug\BT11_TatMoDen.csproj.CoreCompileInputs.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\obj\Debug\BT11_TatMoDen.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT11_TatMoDen\obj\Debug\BT11_TatMoDen.pdb

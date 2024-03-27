@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4BF34A75-8692-4A2D-BC32-E0A28A2605F3}</ProjectGuid>
+    <ProjectGuid>{C82CFE88-1E9D-495C-AE44-FEE60EA503E2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BT16</RootNamespace>
-    <AssemblyName>BT16</AssemblyName>
+    <RootNamespace>BT16_Vs2</RootNamespace>
+    <AssemblyName>BT16_Vs2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

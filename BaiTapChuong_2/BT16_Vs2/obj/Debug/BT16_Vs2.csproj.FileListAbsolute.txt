@@ -1,0 +1,9 @@
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\bin\Debug\BT16_Vs2.exe.config
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\bin\Debug\BT16_Vs2.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\bin\Debug\BT16_Vs2.pdb
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.Form1.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.Properties.Resources.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.csproj.GenerateResource.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.csproj.CoreCompileInputs.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.pdb

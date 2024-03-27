@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BT16
+namespace BT16_Vs2
 {
     public partial class Form1 : Form
     {
@@ -17,47 +17,6 @@ namespace BT16
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void btnThoát_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnTiep_Click(object sender, EventArgs e)
-        {
-            foreach (Control ctl in grbThongTin.Controls)
-                if (ctl is TextBox)
-                    (ctl as TextBox).Clear();
-            txtMaHV.Focus();
-        }
-
-        private void btnDangKy_Click(object sender, EventArgs e)
-        {
-            HocVien hv;
-            if (!txtMaHV.ReadOnly)
-            {
-                hv = new HocVien();
-                hv.MaHV = int.Parse(txtMaHV.Text);
-                hv.HoTen = txtHoTen.Text;
-                hv.LaSV = chkLaSinhVien.Checked;
-                hv.MaLH = cboLopHoc.SelectedValue.ToString();
-                hv.ThanhTien = int.Parse(lblThanhTien.Text.Replace(",", "").Replace("VND", ""));
-                HocViens.Add(hv);
-                KhoiTaoListBox();
-                lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
-                txtMaHV.ReadOnly = true;
-            }
-            else
-            {
-                hv = lstHocVien.SelectedItem as HocVien;
-                hv.HoTen = txtHoTen.Text;
-                hv.LaSV = chkLaSinhVien.Checked;
-                hv.MaLH = cboLopHoc.SelectedValue.ToString();
-                hv.ThanhTien = int.Parse(lblThanhTien.Text.Replace(",", "").Replace("VND", ""));
-                KhoiTaoListBox();
-                lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
-            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -107,6 +66,11 @@ namespace BT16
             };
         }
 
+        private void grbThongTin_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void lstHocVien_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lstHocVien.SelectedIndex == -1) return;
@@ -121,6 +85,67 @@ namespace BT16
             chkLaSinhVien.Checked = hv.LaSV;
             cboLopHoc.SelectedValue = hv.MaLH;
             lblThanhTien.Text = hv.ThanhTien.ToString("#,##0 VND");
+        }
+
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+            HocVien hv;
+            if (!txtMaHV.ReadOnly)
+            {
+                hv = new HocVien();
+                hv.MaHV = int.Parse(txtMaHV.Text);
+                hv.HoTen = txtHoTen.Text;
+                hv.LaSV = chkLaSinhVien.Checked;
+                hv.MaLH = cboLopHoc.SelectedValue.ToString();
+                hv.ThanhTien = int.Parse(lblThanhTien.Text.Replace(",", "").Replace("VND", ""));
+                HocViens.Add(hv);
+                KhoiTaoListBox();
+                lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
+                txtMaHV.ReadOnly = true;
+            }
+            else
+            {
+                hv = lstHocVien.SelectedItem as HocVien;
+                hv.HoTen = txtHoTen.Text;
+                hv.LaSV = chkLaSinhVien.Checked;
+                hv.MaLH = cboLopHoc.SelectedValue.ToString();
+                hv.ThanhTien = int.Parse(lblThanhTien.Text.Replace(",", "").Replace("VND", ""));
+                KhoiTaoListBox();
+                lstHocVien.SelectedIndex = lstHocVien.Items.IndexOf(hv);
+            }
+        }
+
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            txtMaHV.ReadOnly = false;
+
+            foreach (Control ctl in grbThongTin.Controls)
+            {
+                if (ctl is TextBox)
+                    (ctl as TextBox).Clear();
+            }
+            txtMaHV.Focus();
+            chkLaSinhVien.Checked = true;
+            cboLopHoc_SelectedIndexChanged(sender, e);
+        }
+
+        private void btnThoát_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cboLopHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboLopHoc.SelectedIndex == -1) return;
+            LopHoc lh = cboLopHoc.SelectedItem as LopHoc;
+            double thanhtien = lh.HocPhi * (chkLaSinhVien.Checked == true ? 0.9 : 1);
+            lblThanhTien.Text = thanhtien.ToString("#,##0 VND");
+        }
+
+        private void chkLaSinhVien_CheckedChanged(object sender, EventArgs e)
+        {
+            cboLopHoc_SelectedIndexChanged(sender, e);
+
         }
     }
 }

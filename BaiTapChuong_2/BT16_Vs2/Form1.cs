@@ -85,6 +85,8 @@ namespace BT16_Vs2
             chkLaSinhVien.Checked = hv.LaSV;
             cboLopHoc.SelectedValue = hv.MaLH;
             lblThanhTien.Text = hv.ThanhTien.ToString("#,##0 VND");
+            btnTruoc.Enabled = !(lstHocVien.SelectedIndex == 0);
+            btnSau.Enabled = !(lstHocVien.SelectedIndex == lstHocVien.Items.Count - 1);
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)
@@ -146,6 +148,37 @@ namespace BT16_Vs2
         {
             cboLopHoc_SelectedIndexChanged(sender, e);
 
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+            if(tabDSHocVien.SelectedIndex==1)
+            {
+                if (lstHocVien.SelectedIndex == -1)
+                    return;
+                HocVien hv = lstHocVien.SelectedItem as HocVien;
+                GanDuLieu(hv);
+            }    
+        }
+
+        private void btnSau_Click(object sender, EventArgs e)
+        {
+            if (lstHocVien.SelectedIndex == lstHocVien.Items.Count-1)
+            {
+                btnSau.Enabled = false;
+                return;
+            }
+            lstHocVien.SelectedIndex = lstHocVien.SelectedIndex + 1;
+        }
+
+        private void btnTruoc_Click(object sender, EventArgs e)
+        {
+            if (lstHocVien.SelectedIndex == 0)
+            {
+                btnTruoc.Enabled = false;
+                return;
+            }    
+            lstHocVien.SelectedIndex = lstHocVien.SelectedIndex - 1;
         }
     }
 }

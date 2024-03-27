@@ -7,3 +7,4 @@ D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.csproj.Ge
 D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.csproj.CoreCompileInputs.cache
 D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.exe
 D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.pdb
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT16_Vs2\obj\Debug\BT16_Vs2.csproj.AssemblyReference.cache

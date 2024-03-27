@@ -41,18 +41,18 @@ namespace BT16_Vs2
             this.lbaHoTen = new System.Windows.Forms.Label();
             this.txtMaHV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabHocVien = new System.Windows.Forms.TabPage();
             this.lstHocVien = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.grbThongTin = new System.Windows.Forms.GroupBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabDSHocVien = new System.Windows.Forms.TabControl();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSau = new System.Windows.Forms.Button();
             this.btnTruoc = new System.Windows.Forms.Button();
-            this.tabPage1.SuspendLayout();
+            this.tabHocVien.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.grbThongTin.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabDSHocVien.SuspendLayout();
             this.SuspendLayout();
             // 
             // chkLaSinhVien
@@ -179,17 +179,18 @@ namespace BT16_Vs2
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã HV";
             // 
-            // tabPage1
+            // tabHocVien
             // 
-            this.tabPage1.Controls.Add(this.lstHocVien);
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage1.Size = new System.Drawing.Size(598, 454);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Danh sách học viên";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabHocVien.Controls.Add(this.lstHocVien);
+            this.tabHocVien.Location = new System.Drawing.Point(4, 28);
+            this.tabHocVien.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tabHocVien.Name = "tabHocVien";
+            this.tabHocVien.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tabHocVien.Size = new System.Drawing.Size(409, 294);
+            this.tabHocVien.TabIndex = 0;
+            this.tabHocVien.Text = "Danh sách học viên";
+            this.tabHocVien.UseVisualStyleBackColor = true;
+            this.tabHocVien.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // lstHocVien
             // 
@@ -200,7 +201,7 @@ namespace BT16_Vs2
             this.lstHocVien.Location = new System.Drawing.Point(5, 4);
             this.lstHocVien.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.lstHocVien.Name = "lstHocVien";
-            this.lstHocVien.Size = new System.Drawing.Size(588, 446);
+            this.lstHocVien.Size = new System.Drawing.Size(399, 286);
             this.lstHocVien.TabIndex = 12;
             this.lstHocVien.SelectedIndexChanged += new System.EventHandler(this.lstHocVien_SelectedIndexChanged);
             // 
@@ -244,18 +245,18 @@ namespace BT16_Vs2
             this.grbThongTin.Text = "Thông tin học viên";
             this.grbThongTin.Enter += new System.EventHandler(this.grbThongTin_Enter);
             // 
-            // tabControl1
+            // tabDSHocVien
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 91);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(417, 326);
-            this.tabControl1.TabIndex = 14;
+            this.tabDSHocVien.Controls.Add(this.tabHocVien);
+            this.tabDSHocVien.Controls.Add(this.tabPage2);
+            this.tabDSHocVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabDSHocVien.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabDSHocVien.Location = new System.Drawing.Point(0, 91);
+            this.tabDSHocVien.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tabDSHocVien.Name = "tabDSHocVien";
+            this.tabDSHocVien.SelectedIndex = 0;
+            this.tabDSHocVien.Size = new System.Drawing.Size(417, 326);
+            this.tabDSHocVien.TabIndex = 14;
             // 
             // label1
             // 
@@ -279,6 +280,7 @@ namespace BT16_Vs2
             this.btnSau.TabIndex = 10;
             this.btnSau.Text = ">";
             this.btnSau.UseVisualStyleBackColor = true;
+            this.btnSau.Click += new System.EventHandler(this.btnSau_Click);
             // 
             // btnTruoc
             // 
@@ -289,13 +291,14 @@ namespace BT16_Vs2
             this.btnTruoc.TabIndex = 11;
             this.btnTruoc.Text = "<";
             this.btnTruoc.UseVisualStyleBackColor = true;
+            this.btnTruoc.Click += new System.EventHandler(this.btnTruoc_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(417, 417);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabDSHocVien);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -303,11 +306,11 @@ namespace BT16_Vs2
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin học viên";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabPage1.ResumeLayout(false);
+            this.tabHocVien.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.grbThongTin.ResumeLayout(false);
             this.grbThongTin.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.tabDSHocVien.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -326,11 +329,11 @@ namespace BT16_Vs2
         private System.Windows.Forms.Label lbaHoTen;
         private System.Windows.Forms.TextBox txtMaHV;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabHocVien;
         private System.Windows.Forms.ListBox lstHocVien;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox grbThongTin;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabDSHocVien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTruoc;
         private System.Windows.Forms.Button btnSau;

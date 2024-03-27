@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT16", "BT16\BT16.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT16_Vs2", "BT16_Vs2\BT16_Vs2.csproj", "{C82CFE88-1E9D-495C-AE44-FEE60EA503E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT17_ListView", "BT17_ListView\BT17_ListView.csproj", "{CE44DD48-0BD1-4800-81E2-764F64475541}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{C82CFE88-1E9D-495C-AE44-FEE60EA503E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C82CFE88-1E9D-495C-AE44-FEE60EA503E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C82CFE88-1E9D-495C-AE44-FEE60EA503E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE44DD48-0BD1-4800-81E2-764F64475541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE44DD48-0BD1-4800-81E2-764F64475541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE44DD48-0BD1-4800-81E2-764F64475541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE44DD48-0BD1-4800-81E2-764F64475541}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

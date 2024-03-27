@@ -1,0 +1,10 @@
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\bin\Debug\BT17_ListView.exe.config
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\bin\Debug\BT17_ListView.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\bin\Debug\BT17_ListView.pdb
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\obj\Debug\BT17_ListView.csproj.AssemblyReference.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\obj\Debug\BT17_ListView.Form1.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\obj\Debug\BT17_ListView.Properties.Resources.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\obj\Debug\BT17_ListView.csproj.GenerateResource.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\obj\Debug\BT17_ListView.csproj.CoreCompileInputs.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\obj\Debug\BT17_ListView.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT17_ListView\obj\Debug\BT17_ListView.pdb

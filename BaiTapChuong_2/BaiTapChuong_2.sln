@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT16_Vs2", "BT16_Vs2\BT16_V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT17_ListView", "BT17_ListView\BT17_ListView.csproj", "{CE44DD48-0BD1-4800-81E2-764F64475541}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT18", "BT18\BT18.csproj", "{FFC82987-D0F8-44C8-A5FB-C165E0965F03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT19_TreeView", "BT19_TreeView\BT19_TreeView.csproj", "{1DD73A32-3E5E-42C4-B62B-5FE0AA1FA4D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{CE44DD48-0BD1-4800-81E2-764F64475541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE44DD48-0BD1-4800-81E2-764F64475541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE44DD48-0BD1-4800-81E2-764F64475541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC82987-D0F8-44C8-A5FB-C165E0965F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC82987-D0F8-44C8-A5FB-C165E0965F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC82987-D0F8-44C8-A5FB-C165E0965F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC82987-D0F8-44C8-A5FB-C165E0965F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD73A32-3E5E-42C4-B62B-5FE0AA1FA4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD73A32-3E5E-42C4-B62B-5FE0AA1FA4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD73A32-3E5E-42C4-B62B-5FE0AA1FA4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD73A32-3E5E-42C4-B62B-5FE0AA1FA4D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

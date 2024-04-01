@@ -1,0 +1,10 @@
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\bin\Debug\BT19_TreeView.exe.config
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\bin\Debug\BT19_TreeView.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\bin\Debug\BT19_TreeView.pdb
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\obj\Debug\BT19_TreeView.csproj.AssemblyReference.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\obj\Debug\BT19_TreeView.Form1.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\obj\Debug\BT19_TreeView.Properties.Resources.resources
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\obj\Debug\BT19_TreeView.csproj.GenerateResource.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\obj\Debug\BT19_TreeView.csproj.CoreCompileInputs.cache
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\obj\Debug\BT19_TreeView.exe
+D:\DATA\Git Clone\Git Clone\BaiTapChuong_2\BT19_TreeView\obj\Debug\BT19_TreeView.pdb

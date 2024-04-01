@@ -56,6 +56,78 @@ namespace BT17_ListView
             }
         }
 
-        
+        private void lswSinhVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lswSinhVien.SelectedItems.Count == 0) return;
+            ListViewItem lv = lswSinhVien.SelectedItems[0];
+            txtMaSV.Text = lv.Text;
+            txtHoTen.Text = lv.SubItems[1].Text;
+            txtLopHoc.Text = lv.SubItems[2].Text;
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            txtMaSV.ReadOnly = false;
+            foreach (Control ctl in Controls)
+                if (ctl is TextBox)
+                    (ctl as TextBox).Clear();
+            txtMaSV.Focus();
+        }
+
+        private void btnGhi_Click(object sender, EventArgs e)
+        {
+            if(txtMaSV.ReadOnly==false)
+            {
+                SinhVien sv = new SinhVien();
+                sv.MaSV = txtMaSV.Text;
+                sv.HoTen = txtHoTen.Text;
+                sv.MaLH = txtLopHoc.Text;
+                SinhViens.Add(sv);
+
+                ListViewItem lv = new ListViewItem(sv.MaSV);
+                lv.SubItems.Add(sv.HoTen);
+                lv.SubItems.Add(sv.MaLH);
+                lswSinhVien.Items.Add(lv);
+
+                lv.Selected = true;
+                lswSinhVien.Select();
+                txtMaSV.ReadOnly = true;
+            }
+            else
+            {
+                SinhVien sv = TimSinhVien(txtMaSV.Text);
+                sv.HoTen = txtHoTen.Text;
+                sv.MaLH = txtLopHoc.Text;
+
+                ListViewItem lv = lswSinhVien.SelectedItems[0];
+                lv.SubItems[1].Text = txtHoTen.Text;
+                lv.SubItems[2].Text = txtLopHoc.Text;
+                lswSinhVien.Select();
+            }    
+        }
+
+        private SinhVien TimSinhVien(string MaSV)
+        {
+            SinhVien kq = null;
+            foreach (SinhVien sv in SinhViens)
+                if (sv.MaSV == MaSV)
+                    return sv;
+            return kq;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (lswSinhVien.SelectedItems.Count == 0) return;
+            DialogResult tl = MessageBox.Show("Bạn có muốn xoá sinh viên này không", "Thông báo xoá", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(tl==DialogResult.Yes)
+            {
+                SinhVien svXoa = TimSinhVien(txtMaSV.Text);
+                SinhViens.Remove(svXoa);
+                ListViewItem lvXoa = lswSinhVien.SelectedItems[0];
+                lswSinhVien.Items.Remove(lvXoa);
+                lswSinhVien.Select();
+                lswSinhVien.Items[0].Selected = true;
+            }    
+        }
     }
 }

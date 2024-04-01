@@ -36,6 +36,9 @@ namespace BT17_ListView
             this.txtMaSV = new System.Windows.Forms.TextBox();
             this.txtLopHoc = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnGhi = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lswSinhVien
@@ -48,13 +51,14 @@ namespace BT17_ListView
             this.lswSinhVien.FullRowSelect = true;
             this.lswSinhVien.GridLines = true;
             this.lswSinhVien.HideSelection = false;
-            this.lswSinhVien.Location = new System.Drawing.Point(12, 90);
+            this.lswSinhVien.Location = new System.Drawing.Point(12, 52);
             this.lswSinhVien.MultiSelect = false;
             this.lswSinhVien.Name = "lswSinhVien";
             this.lswSinhVien.Size = new System.Drawing.Size(612, 296);
             this.lswSinhVien.TabIndex = 0;
             this.lswSinhVien.UseCompatibleStateImageBehavior = false;
             this.lswSinhVien.View = System.Windows.Forms.View.Details;
+            this.lswSinhVien.SelectedIndexChanged += new System.EventHandler(this.lswSinhVien_SelectedIndexChanged);
             // 
             // MaSV
             // 
@@ -73,33 +77,66 @@ namespace BT17_ListView
             // 
             // txtMaSV
             // 
-            this.txtMaSV.Font = new System.Drawing.Font("Vinhan", 8.25F);
-            this.txtMaSV.Location = new System.Drawing.Point(12, 61);
+            this.txtMaSV.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaSV.Location = new System.Drawing.Point(12, 23);
             this.txtMaSV.Name = "txtMaSV";
-            this.txtMaSV.Size = new System.Drawing.Size(121, 23);
+            this.txtMaSV.Size = new System.Drawing.Size(121, 27);
             this.txtMaSV.TabIndex = 1;
             // 
             // txtLopHoc
             // 
-            this.txtLopHoc.Font = new System.Drawing.Font("Vinhan", 8.25F);
-            this.txtLopHoc.Location = new System.Drawing.Point(503, 61);
+            this.txtLopHoc.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLopHoc.Location = new System.Drawing.Point(503, 23);
             this.txtLopHoc.Name = "txtLopHoc";
-            this.txtLopHoc.Size = new System.Drawing.Size(121, 23);
+            this.txtLopHoc.Size = new System.Drawing.Size(121, 27);
             this.txtLopHoc.TabIndex = 2;
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Font = new System.Drawing.Font("Vinhan", 8.25F);
-            this.txtHoTen.Location = new System.Drawing.Point(139, 61);
+            this.txtHoTen.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTen.Location = new System.Drawing.Point(139, 23);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(358, 23);
+            this.txtHoTen.Size = new System.Drawing.Size(358, 27);
             this.txtHoTen.TabIndex = 3;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(123, 369);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(115, 32);
+            this.btnThem.TabIndex = 4;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnGhi
+            // 
+            this.btnGhi.Location = new System.Drawing.Point(259, 369);
+            this.btnGhi.Name = "btnGhi";
+            this.btnGhi.Size = new System.Drawing.Size(115, 32);
+            this.btnGhi.TabIndex = 5;
+            this.btnGhi.Text = "Ghi";
+            this.btnGhi.UseVisualStyleBackColor = true;
+            this.btnGhi.Click += new System.EventHandler(this.btnGhi_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(399, 369);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(115, 32);
+            this.btnXoa.TabIndex = 6;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 414);
+            this.ClientSize = new System.Drawing.Size(636, 422);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnGhi);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.txtLopHoc);
             this.Controls.Add(this.txtMaSV);
@@ -124,6 +161,9 @@ namespace BT17_ListView
         private System.Windows.Forms.TextBox txtMaSV;
         private System.Windows.Forms.TextBox txtLopHoc;
         private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnGhi;
+        private System.Windows.Forms.Button btnXoa;
     }
 }
 
